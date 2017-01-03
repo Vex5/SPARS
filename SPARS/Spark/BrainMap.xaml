@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Spark.BrainMap"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Spark"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    mc:Ignorable="d">
+
+    <Grid x:Name="pageGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="264*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="269*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        
+        <Maps:MapControl
+       x:Name="MapControl3"            
+       ZoomInteractionMode="GestureAndControl"
+       TiltInteractionMode="GestureAndControl"
+       Visibility="Visible"
+       MapServiceToken="HzCwR6nFwVQBM1mIxwO9~ho25zjSax_clOgLf4Uiy-Q~AtJRKi-7CNIfnZkhp2kzAXSAVpNd9717dGQf5Utj5D3ofmJj3DokJf5txbTyj5Xi" Loaded="MapControl3_Loaded" Grid.ColumnSpan="2" Grid.RowSpan="3"></Maps:MapControl>
+
+
+
+        <Button x:Name="button21" Grid.Column="0" Grid.Row="0" Width="50" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Click="button21_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/BackArrowBlue.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
